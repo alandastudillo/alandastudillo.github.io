@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr Aland Astudillo — AI, data and machine learning</title>
+<meta name="description" content="Biomedical engineer, data scientist and AI consultant. Ten years building data and AI systems across health, government, research and industry. Gold Coast, Australia.">
+<link rel="canonical" href="https://alandastudillo.github.io/">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Dr Aland Astudillo">
+<meta property="og:description" content="Biomedical engineer, data scientist and AI consultant. Gold Coast, Australia.">
+<meta property="og:url" content="https://alandastudillo.github.io/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap">
+
+<style>
+  /* Deliberately not Sparkbrain's palette. That site is the company; this is the person.
+     Warm paper, ink, and a single muted clay accent used only for links. */
+  :root {
+    --paper:  #fbfaf8;
+    --raised: #ffffff;
+    --ink:    #1a1917;
+    --body:   #4b4843;
+    --muted:  #7d7972;
+    --rule:   #e5e1da;
+    --accent: #8a4b32;
+
+    --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+    --sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:  #14130f;
+      --raised: #1c1b17;
+      --ink:    #f2efe9;
+      --body:   #bdb8ae;
+      --muted:  #8b867c;
+      --rule:   #2e2c26;
+      --accent: #d99878;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--body);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; padding: clamp(3rem, 8vw, 6rem) 1.5rem 5rem; }
+
+  h1, h2 { font-family: var(--serif); color: var(--ink); margin: 0; font-weight: 600; line-height: 1.15; }
+  h1 { font-size: clamp(2.1rem, 1.5rem + 2.6vw, 3.1rem); letter-spacing: -0.02em; }
+
+  h2 {
+    font-family: var(--sans);
+    font-size: 0.74rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+    margin: 0 0 1rem;
+  }
+
+  .role {
+    font-family: var(--serif);
+    font-size: 1.22rem;
+    color: var(--body);
+    margin: 0.8rem 0 0;
+  }
+  .place { color: var(--muted); font-size: 0.95rem; margin: 0.4rem 0 0; }
+
+  .lede { font-size: 1.1rem; margin: 2.2rem 0 0; max-width: 38rem; }
+
+  section { margin: 3.4rem 0 0; }
+  p { margin: 0 0 1rem; }
+  p:last-child { margin-bottom: 0; }
+
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+  a:hover { border-bottom-color: var(--accent); }
+
+  ul.plain { list-style: none; margin: 0; padding: 0; }
+  ul.plain li { padding: 0.62rem 0; border-bottom: 1px solid var(--rule); }
+  ul.plain li:last-child { border-bottom: 0; }
+  ul.plain b { color: var(--ink); font-weight: 600; }
+  ul.plain .sub { color: var(--muted); font-size: 0.93rem; }
+
+  .links { display: flex; flex-wrap: wrap; gap: 0.5rem 0.75rem; margin-top: 1rem; padding: 0; list-style: none; }
+  .links a {
+    display: inline-block;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 0.45rem 1rem;
+    font-size: 0.9rem;
+    color: var(--body);
+    background: var(--raised);
+  }
+  .links a:hover { border-color: var(--accent); color: var(--accent); }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<main class="wrap">
+
+  <h1>Aland Astudillo</h1>
+  <p class="role">Biomedical engineer, data scientist and AI consultant</p>
+  <p class="place">Gold Coast, Queensland, Australia &middot; English and Spanish</p>
+
+  <p class="lede">
+    For ten years I have built data and AI systems for hospitals, governments, universities and
+    companies. The kind that have to keep working after the pilot ends.
+  </p>
+
+  <section>
+    <h2>What I work on</h2>
+    <p>
+      AI governance and risk, retrieval augmented generation and knowledge graphs, machine
+      learning and statistical modelling, and the process and data work that has to happen
+      before any of it is worth building. Mostly in regulated and operational settings, where
+      being wrong has consequences.
+    </p>
+  </section>
+
+  <section>
+    <h2>Organisations I work with</h2>
+    <ul class="plain">
+      <li><b><a href="https://sparkbrain.com.au/">Sparkbrain</a></b> — founder. Independent AI, data and technology consultancy.</li>
+      <li><b>Clevvi</b> — AI strategy and data science.</li>
+      <li><b><a href="https://tedix.ai/">Tedix</a></b> — collaborator.</li>
+      <li><b>Western Sydney University</b> <span class="sub">— Adjunct Fellow, NICM Health Research Institute</span></li>
+      <li><b>Queensland University of Technology</b> <span class="sub">— Visiting Fellow, ARC Training Centre for Behavioural Insights for Technology Adoption, Faculty of Business and Law</span></li>
+      <li><b>Swinburne University of Technology</b></li>
+      <li><b>Research Graph Foundation</b></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Background</h2>
+    <ul class="plain">
+      <li><b>PhD in Sciences</b> <span class="sub">(Biophysics and Computational Biology) — Universidad de Valparaíso, Chile</span></li>
+      <li><b>MSc Engineering Sciences</b> <span class="sub">, Biomedical Engineering — Universidad de Valparaíso</span></li>
+      <li><b>BSc Biomedical Engineering</b> <span class="sub">— Universidad de Valparaíso</span></li>
+      <li><b>Certified Member</b> <span class="sub">, Australian Computer Society</span></li>
+      <li><b>Registered expert</b> <span class="sub">, Scimex — Australian Science Media Centre</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Research and writing</h2>
+    <p>
+      Peer-reviewed research in signal processing and clustering, with further published work on
+      retrieval augmented generation and knowledge graphs. Around twenty conference
+      presentations across Australia, Chile, Canada and Italy, and a popular-science book on the
+      brain. The full record is on
+      <a href="https://scholar.google.com/citations?user=Lu5GyWMAAAAJ">Google&nbsp;Scholar</a> and
+      <a href="https://orcid.org/0009-0008-8672-3168">ORCID</a>.
+    </p>
+  </section>
+
+  <section>
+    <h2>Elsewhere</h2>
+    <ul class="links">
+      <li><a href="https://www.linkedin.com/in/aland-astudillo/">LinkedIn</a></li>
+      <li><a href="https://github.com/alandastudillo">GitHub</a></li>
+      <li><a href="https://scholar.google.com/citations?user=Lu5GyWMAAAAJ">Google Scholar</a></li>
+      <li><a href="https://orcid.org/0009-0008-8672-3168">ORCID</a></li>
+      <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57210170699">Scopus</a></li>
+      <li><a href="https://researchers.westernsydney.edu.au/en/persons/aland-astudillo-contreras">WSU</a></li>
+      <li><a href="https://www.scimex.org/experts?a=1062891">Scimex</a></li>
+      <li><a href="https://sparkbrain.com.au/">Sparkbrain</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      The quickest way to reach me is
+      <a href="https://www.linkedin.com/in/aland-astudillo/">LinkedIn</a>.
+    </p>
+  </section>
+
+  <footer>
+    Gold Coast, Queensland, Australia
+  </footer>
+
+</main>
+
+</body>
+</html>
