@@ -78,7 +78,19 @@
   }
   .place { color: var(--muted); font-size: 0.95rem; margin: 0.4rem 0 0; }
 
+  .hero { display: flex; align-items: center; gap: 1.6rem; flex-wrap: wrap; }
+  .portrait {
+    width: 104px; height: 104px; border-radius: 50%;
+    object-fit: cover; flex: none;
+    border: 1px solid var(--rule);
+  }
+  @media (max-width: 420px) { .portrait { width: 80px; height: 80px; } }
+
   .lede { font-size: 1.1rem; margin: 2.2rem 0 0; max-width: 38rem; }
+
+  figure { margin: 1.6rem 0 0; }
+  figure img { width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--rule); display: block; }
+  figcaption { color: var(--muted); font-size: 0.86rem; margin-top: 0.5rem; }
 
   section { margin: 3.4rem 0 0; }
   p { margin: 0 0 1rem; }
@@ -120,9 +132,14 @@
 
 <main class="wrap">
 
-  <h1>Aland Astudillo</h1>
-  <p class="role">Biomedical engineer, data scientist and AI consultant</p>
-  <p class="place">Gold Coast, Queensland, Australia &middot; English and Spanish</p>
+  <div class="hero">
+    <img class="portrait" src="img/aland.webp" width="800" height="800" alt="Aland Astudillo" fetchpriority="high">
+    <div>
+      <h1>Aland Astudillo</h1>
+      <p class="role">Biomedical engineer, data scientist and AI consultant</p>
+      <p class="place">Gold Coast, Queensland, Australia &middot; English and Spanish</p>
+    </div>
+  </div>
 
   <p class="lede">
     For ten years I have built data and AI systems for hospitals, governments, universities and
@@ -147,8 +164,10 @@
       <li><b><a href="https://tedix.ai/">Tedix</a></b> — collaborator.</li>
       <li><b>Western Sydney University</b> <span class="sub">— Adjunct Fellow, NICM Health Research Institute</span></li>
       <li><b>Queensland University of Technology</b> <span class="sub">— Visiting Fellow, ARC Training Centre for Behavioural Insights for Technology Adoption, Faculty of Business and Law</span></li>
-      <li><b>Swinburne University of Technology</b></li>
-      <li><b>Research Graph Foundation</b></li>
+      <li><b>Swinburne University of Technology</b> <span class="sub">— collaborator</span></li>
+      <li><b>Research Graph Foundation</b> <span class="sub">— collaborator</span></li>
+      <li><b>Exonova</b> <span class="sub">— technical advisor</span></li>
+      <li><b>Tellie</b> <span class="sub">— technical advisor</span></li>
     </ul>
   </section>
 
@@ -173,6 +192,16 @@
       <a href="https://scholar.google.com/citations?user=Lu5GyWMAAAAJ">Google&nbsp;Scholar</a> and
       <a href="https://orcid.org/0009-0008-8672-3168">ORCID</a>.
     </p>
+  </section>
+
+  <section>
+    <h2>Applied AI writing</h2>
+    <ul class="plain">
+      <li><a href="https://hub.researchgraph.org/unveiling-the-synergy-retrieval-augmented-generation-rag-meets-knowledge-graphs/">Unveiling the synergy: retrieval augmented generation meets knowledge graphs</a> <span class="sub">— tools and platforms for integrating knowledge graphs with RAG pipelines</span></li>
+      <li><a href="https://hub.researchgraph.org/the-combined-use-of-retrieval-augmented-generation-rag-and-fine-tuning-to-improve-llm-pipelines/">The combined use of RAG and fine-tuning to improve LLM pipelines</a> <span class="sub">— when to retrieve, when to fine-tune, and when to do both</span></li>
+      <li><a href="https://hub.researchgraph.org/what-is-llmlingua/">What is LLMLingua?</a> <span class="sub">— prompt compression to improve large language model performance</span></li>
+      <li><a href="https://hub.researchgraph.org/how-to-use-grobid-to-extract-text-from-pdf-files/">How to use GROBID to extract text from PDF files</a> <span class="sub">— machine-learning extraction of structured information from PDFs</span></li>
+    </ul>
   </section>
 
   <section>
