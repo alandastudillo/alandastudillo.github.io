@@ -6,6 +6,9 @@
 <title>Dr Aland Astudillo | AI, data and machine learning</title>
 <meta name="description" content="Biomedical engineer, data scientist and AI consultant. Ten years building data and AI systems across health, government, research and industry. Gold Coast, Australia.">
 <link rel="canonical" href="https://alandastudillo.github.io/">
+<link rel="alternate" hreflang="en" href="https://alandastudillo.github.io/">
+<link rel="alternate" hreflang="es" href="https://alandastudillo.github.io/es/">
+<link rel="alternate" hreflang="x-default" href="https://alandastudillo.github.io/">
 
 <meta property="og:type" content="profile">
 <meta property="og:site_name" content="Aland Astudillo">
@@ -29,128 +32,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap">
 
-<style>
-  /* Deliberately not Sparkbrain's palette. That site is the company; this is the person.
-     Warm paper, ink, and a single muted clay accent used only for links. */
-  :root {
-    --paper:  #fbfaf8;
-    --raised: #ffffff;
-    --ink:    #1a1917;
-    --body:   #4b4843;
-    --muted:  #7d7972;
-    --rule:   #e5e1da;
-    --accent: #8a4b32;
-
-    --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
-    --sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --paper:  #14130f;
-      --raised: #1c1b17;
-      --ink:    #f2efe9;
-      --body:   #bdb8ae;
-      --muted:  #8b867c;
-      --rule:   #2e2c26;
-      --accent: #d99878;
-    }
-  }
-
-  * { box-sizing: border-box; }
-
-  body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--body);
-    font-family: var(--sans);
-    font-size: 17px;
-    line-height: 1.7;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  .wrap { max-width: 44rem; margin: 0 auto; padding: clamp(3rem, 8vw, 6rem) 1.5rem 5rem; }
-
-  h1, h2 { font-family: var(--serif); color: var(--ink); margin: 0; font-weight: 600; line-height: 1.15; }
-  h1 { font-size: clamp(2.1rem, 1.5rem + 2.6vw, 3.1rem); letter-spacing: -0.02em; }
-
-  h2 {
-    font-family: var(--sans);
-    font-size: 0.74rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--muted);
-    font-weight: 600;
-    margin: 0 0 1rem;
-  }
-
-  .role {
-    font-family: var(--serif);
-    font-size: 1.22rem;
-    color: var(--body);
-    margin: 0.8rem 0 0;
-  }
-  .place { color: var(--muted); font-size: 0.95rem; margin: 0.4rem 0 0; }
-
-  .hero { display: flex; align-items: center; gap: 1.6rem; flex-wrap: wrap; }
-  .portrait {
-    width: 104px; height: 104px; border-radius: 50%;
-    object-fit: cover; flex: none;
-    border: 1px solid var(--rule);
-  }
-  @media (max-width: 420px) { .portrait { width: 80px; height: 80px; } }
-
-  .lede { font-size: 1.1rem; margin: 2.2rem 0 0; max-width: 38rem; }
-
-  figure { margin: 1.6rem 0 0; }
-  figure img { width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--rule); display: block; }
-  figcaption { color: var(--muted); font-size: 0.86rem; margin-top: 0.5rem; }
-
-  section { margin: 3.4rem 0 0; }
-  p { margin: 0 0 1rem; }
-  p:last-child { margin-bottom: 0; }
-
-  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
-  a:hover { border-bottom-color: var(--accent); }
-
-  ul.plain { list-style: none; margin: 0; padding: 0; }
-  ul.plain li { padding: 0.62rem 0; border-bottom: 1px solid var(--rule); }
-  ul.plain li:last-child { border-bottom: 0; }
-  ul.plain b { color: var(--ink); font-weight: 600; }
-  ul.plain .sub { color: var(--muted); font-size: 0.93rem; }
-
-  .grp {
-    font-family: var(--sans);
-    font-size: 0.7rem;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--muted);
-    font-weight: 600;
-    margin: 1.5rem 0 0;
-  }
-  .grp:first-of-type { margin-top: 0; }
-
-  .links { display: flex; flex-wrap: wrap; gap: 0.5rem 0.75rem; margin-top: 1rem; padding: 0; list-style: none; }
-  .links a {
-    display: inline-block;
-    border: 1px solid var(--rule);
-    border-radius: 999px;
-    padding: 0.45rem 1rem;
-    font-size: 0.9rem;
-    color: var(--body);
-    background: var(--raised);
-  }
-  .links a:hover { border-color: var(--accent); color: var(--accent); }
-
-  footer {
-    margin-top: 4rem;
-    padding-top: 1.4rem;
-    border-top: 1px solid var(--rule);
-    color: var(--muted);
-    font-size: 0.85rem;
-  }
-
-  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
-</style>
+<link rel="stylesheet" href="style.css">
 
 <!-- Inert data, not executable script. This page is the canonical identity: its job is to
      tie nineteen scattered profiles to one person, so sameAs is the payload here and
@@ -250,6 +132,8 @@
 <body>
 
 <main class="wrap">
+
+  <p class="lang"><a href="es/" hreflang="es" lang="es">Español</a></p>
 
   <div class="hero">
     <img class="portrait" src="img/aland.webp" width="800" height="800" alt="Aland Astudillo" fetchpriority="high">
