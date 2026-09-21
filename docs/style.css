@@ -119,6 +119,16 @@ footer {
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 
-.lang { margin: 0 0 1.8rem; font-size: 0.9rem; }
-.lang a { color: var(--muted); }
-.lang a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+/* Language switch. Top right is where people look for one, and it borrows the
+   pill treatment from .links so it reads as a control rather than stray text. */
+.lang { display: flex; justify-content: flex-end; margin: 0 0 1.2rem; }
+.lang a {
+  display: inline-block;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 0.35rem 0.95rem;
+  font-size: 0.85rem;
+  color: var(--body);
+  background: var(--raised);
+}
+.lang a:hover { border-color: var(--accent); color: var(--accent); }
