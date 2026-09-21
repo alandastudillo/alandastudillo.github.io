@@ -119,16 +119,84 @@ footer {
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 
-/* Language switch. Top right is where people look for one, and it borrows the
-   pill treatment from .links so it reads as a control rather than stray text. */
-.lang { display: flex; justify-content: flex-end; margin: 0 0 1.2rem; }
-.lang a {
-  display: inline-block;
+
+/* ── Sticky section nav ──────────────────────────────────────────────────
+   No JavaScript: position:sticky, plain anchors, and scroll-margin-top so a
+   jumped-to heading clears the bar. Section ids are the same in both
+   languages, so a shared link survives a language switch. */
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid var(--rule);
+}
+.topbar-in {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 0.55rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.topbar-name {
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  color: var(--ink);
+  white-space: nowrap;
+  flex: none;
+}
+.topbar-nav {
+  display: flex;
+  gap: 1.05rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin-left: auto;
+  padding: 0.15rem 0;
+}
+.topbar-nav::-webkit-scrollbar { display: none; }
+.topbar-nav a {
+  font-size: 0.85rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.topbar-nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.topbar-lang {
+  flex: none;
+  font-size: 0.8rem;
+  color: var(--body);
   border: 1px solid var(--rule);
   border-radius: 999px;
-  padding: 0.35rem 0.95rem;
-  font-size: 0.85rem;
-  color: var(--body);
+  padding: 0.22rem 0.7rem;
   background: var(--raised);
+  white-space: nowrap;
 }
-.lang a:hover { border-color: var(--accent); color: var(--accent); }
+.topbar-lang:hover { border-color: var(--accent); color: var(--accent); }
+
+/* The name is the only thing that must never be squeezed out on a phone. */
+@media (max-width: 620px) {
+  .topbar-in { gap: 0.75rem; padding-inline: 1.1rem; }
+  .topbar-name { font-size: 0.9rem; }
+}
+
+section[id], main[id] { scroll-margin-top: 4.25rem; }
+
+/* Visible only when tabbed to. */
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--raised);
+  color: var(--ink);
+  border: 1px solid var(--accent);
+  border-radius: 0 0 6px 0;
+  padding: 0.6rem 1rem;
+  z-index: 20;
+}
+.skip:focus { left: 0; }
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
